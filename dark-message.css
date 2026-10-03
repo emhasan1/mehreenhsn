@@ -1,0 +1,23 @@
+.message-launcher{width:auto;min-width:132px;height:48px;padding:0 21px;border-radius:30px 15px 30px 30px;border:1px solid #caffff;background:radial-gradient(ellipse at 52% 40%,#00bcc8 5%,#50d1d8 42%,#baf4f2 96%);color:#0d272a;font:700 15px Neue,Arial,sans-serif;box-shadow:inset 3px 3px 6px #fff9,inset -2px -3px 6px #f4ffff88,0 5px 20px #0d0d0d20}.message-launcher:hover,.message-launcher[aria-expanded=true]{background:radial-gradient(ellipse at 50% 40%,#00bcc8,#adf2ed);color:#0d272a;transform:translateY(-3px);box-shadow:inset 3px 3px 6px #fffc,inset -2px -3px 6px #f4ffff88,0 8px 25px #00bcc82b}.message-panel{background:#141818;color:#f4f4f4;border-color:#343d3a;box-shadow:0 20px 70px #0005}.message-panel-top{color:#abb9b4}.message-close{background:#2c3431;color:#f4f4f4}.message-label{color:#d5ded9}.message-form textarea{background:#202724;color:#f4f4f4;border-color:#3b4942}.message-form textarea::placeholder{color:#9ca9a1}.message-form textarea:focus{outline-color:#00bcc8}.message-send{background:#d0ff00;color:#0d0d0d}.message-send:hover{background:#e2ff60;color:#0d0d0d}.message-send:disabled{opacity:.65;cursor:wait}.message-mail{display:block;text-align:center;padding:13px 8px 3px;font-size:14px;color:#d1e1da;text-decoration:underline;text-underline-offset:4px}.message-mail:hover{color:#00bcc8}.message-form .message-status{font-size:13px;line-height:1.45;color:#bacbc1;margin:14px 0 0}.message-status:empty{display:none}@media(max-width:700px){.message-launcher{width:auto;min-width:125px;height:46px;border-radius:28px 14px 28px 28px;font-size:14px}}
+.message-panel{background:radial-gradient(ellipse 42% 18% at 0% 0%,#f4f4f4b3 0%,#00bcc866 24%,transparent 78%),radial-gradient(ellipse 65% 12% at 44% 0%,#d0ff0045 0%,#00bcc826 40%,transparent 85%),radial-gradient(ellipse 28% 38% at 100% 0%,#f4f4f422 0%,transparent 82%),#101214;border:1px solid #f4f4f430;border-radius:30px;box-shadow:inset 0 1px 1px #f4f4f466,inset 1px 0 1px #00bcc833,0 20px 70px #0005}
+.message-form textarea{background:#182126;border-color:#ffffff12}
+.message-send{background:linear-gradient(110deg,#00bcc8 0%,#47cfb2 58%,#d0ff00 140%);box-shadow:inset 0 1px 1px #f4f4f466;color:#0d0d0d}
+.message-send:hover{background:linear-gradient(110deg,#30d3dc 0%,#69dab4 58%,#d0ff00 120%);color:#0d0d0d}
+.message-compose{position:relative;border-radius:12px;background:#182126;border:1px solid #ffffff12;overflow:hidden}
+.message-compose:focus-within{outline:2px solid #00bcc8;outline-offset:2px}
+.message-compose textarea{display:block;border:0;background:transparent;min-height:170px;padding:13px 13px 66px;resize:vertical}
+.message-compose textarea:focus{outline:none}
+.message-compose .message-send{position:absolute;right:10px;bottom:10px;width:auto;min-width:92px;min-height:42px;margin:0;padding:8px 13px;gap:15px;border-radius:9px;background:#d0ff00;color:#0d0d0d;box-shadow:none;transition:transform .2s}
+.message-compose .message-send:hover{background:#d0ff00;color:#0d0d0d;transform:translateY(-2px)}
+.message-compose .message-send:disabled{opacity:1;cursor:default}
+.desk-section{position:relative;isolation:isolate;padding-bottom:135px}
+.desk-section:after{content:'';position:absolute;z-index:-1;pointer-events:none;left:50%;bottom:0;transform:translateX(-50%);width:min(100%,1000px);height:240px;background:radial-gradient(ellipse at 27% 38%,#00bcc84d,transparent 58%),radial-gradient(ellipse at 70% 38%,#d0ff0057,transparent 60%);filter:blur(28px);border-radius:50%}
+@media(max-width:650px){.desk-section{padding-bottom:95px}.desk-section:after{height:150px;filter:blur(20px)}}
+@media(prefers-reduced-motion:reduce){.message-compose .message-send{transition:none}}
+/* Borderless interface. Keep borders used to draw the tabletop objects. */
+*:focus,*:focus-visible,*:focus-within{outline:none!important}
+.nav,.hire,.message-launcher,.message-panel,.message-compose,.message-form textarea,.message-send,.message-close,.message-mail,.blog-card,.blog-card-tag,.blog-more,.pinboard,.project,.project-art,.game-card,.tool-tile,.folder-front,.folder-back,.folder-sheet,.case-entry,.case-cover,dialog,.desk-close,.close-panel,main>.work-end{border-color:transparent!important}
+.message-panel{box-shadow:0 20px 70px #0005}
+.message-launcher{box-shadow:inset 3px 3px 9px #fff6,inset -2px -3px 9px #f4ffff55,0 5px 20px #0d0d0d20}
+button:focus-visible,a:focus-visible,[tabindex]:focus-visible{box-shadow:0 5px 20px #00bcc855}
+.message-compose:has(textarea:focus-visible){box-shadow:0 4px 18px #00bcc825}
