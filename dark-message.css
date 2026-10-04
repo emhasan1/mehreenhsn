@@ -21,3 +21,5 @@
 .message-launcher{box-shadow:inset 3px 3px 9px #fff6,inset -2px -3px 9px #f4ffff55,0 5px 20px #0d0d0d20}
 button:focus-visible,a:focus-visible,[tabindex]:focus-visible{box-shadow:0 5px 20px #00bcc855}
 .message-compose:has(textarea:focus-visible){box-shadow:0 4px 18px #00bcc825}
+
+.message-panel{max-height:calc(100dvh - 100px);overflow-y:auto}.message-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}.message-fields label{font-size:13px;color:#d5ded9}.message-fields input{display:block;width:100%;min-width:0;margin-top:6px;padding:11px 12px;border:0;border-radius:10px;background:#182126;color:#f4f4f4;font:16px Neue,Arial,sans-serif;box-sizing:border-box}.message-fields input:focus-visible{box-shadow:0 0 0 2px #00bcc8}.message-privacy{font-size:11px;line-height:1.4;color:#a8b7b4;margin:12px 0 0}.message-honeypot{display:none!important}@media(max-width:400px){.message-fields{grid-template-columns:1fr;gap:9px}}

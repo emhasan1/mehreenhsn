@@ -1,0 +1,7 @@
+.env
+.env.*
+!.env.example
+private-messages/
+*.log
+*.pem
+*.key
